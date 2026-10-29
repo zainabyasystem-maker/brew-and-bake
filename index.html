@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brew & Bake | Artisanal Coffee & Fresh Bakery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">☕ Brew & Bake</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#insights">Data Insights</a>
+      <a href="#about">About Us</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <span class="badge">Freshly Baked & Brewed Daily</span>
+      <h1>Where Artisanal Coffee Meets Oven-Fresh Perfection</h1>
+      <p>Savor hand-crafted espresso, slow-fermented sourdoughs, and decadent French pastries crafted with passion every single morning.</p>
+      <div class="hero-buttons">
+        <a href="#menu" class="btn btn-primary">Explore Our Menu</a>
+        <a href="#insights" class="btn btn-secondary">View Sales Insights</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section (Part 1: Coffee Items) -->
+  <section id="menu" class="menu-section">
+    <div class="container">
+      <h2>Our Artisanal Menu</h2>
+      <p class="section-subtitle">Freshly brewed coffees, beverages, and handcrafted oven baked goods.</p>
+      
+      <div class="menu-grid">
+        <!-- Coffee Items -->
+        <div class="menu-card">
+          <img src="images/espresso.jpg" alt="Espresso">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Espresso</h3>
+            <p class="price">Rs. 450</p>
+            <div class="cart-section">
+              <span class="item-desc">Rich & bold shot</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Espresso', 450)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cappuccino.jpg" alt="Cappuccino">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Cappuccino</h3>
+            <p class="price">Rs. 550</p>
+            <div class="cart-section">
+              <span class="item-desc">Classic frothy coffee</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Cappuccino', 550)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-latte.jpg" alt="Iced Latte">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Iced Latte</h3>
+            <p class="price">Rs. 600</p>
+            <div class="cart-section">
+              <span class="item-desc">Cold refreshing brew</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Iced Latte', 600)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/spanish-latte.jpg" alt="Spanish Latte">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Spanish Latte</h3>
+            <p class="price">Rs. 650</p>
+            <div class="cart-section">
+              <span class="item-desc">Sweetened specialty coffee</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Spanish Latte', 650)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/caramel-macchiato.jpg" alt="Caramel Macchiato">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Caramel Macchiato</h3>
+            <p class="price">Rs. 680</p>
+            <div class="cart-section">
+              <span class="item-desc">Rich caramel flavor</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Caramel Macchiato', 680)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cold-brew.jpg" alt="Cold Brew">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Cold Brew</h3>
+            <p class="price">Rs. 500</p>
+            <div class="cart-section">
+              <span class="item-desc">Slow steeped coffee</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Cold Brew', 500)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/mocha.jpg" alt="Mocha">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Mocha</h3>
+            <p class="price">Rs. 620</p>
+            <div class="cart-section">
+              <span class="item-desc">Espresso with chocolate</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Mocha', 620)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-americano.jpg" alt="Iced Americano">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Iced Americano</h3>
+            <p class="price">Rs. 480</p>
+            <div class="cart-section">
+              <span class="item-desc">Crisp & light coffee</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Iced Americano', 480)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/flat-white.jpg" alt="Flat White">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Flat White</h3>
+            <p class="price">Rs. 520</p>
+            <div class="cart-section">
+              <span class="item-desc">Smooth steamed milk</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Flat White', 520)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/vanilla-latte.jpg" alt="Vanilla Latte">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Vanilla Latte</h3>
+            <p class="price">Rs. 620</p>
+            <div class="cart-section">
+              <span class="item-desc">Infused with vanilla</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Vanilla Latte', 620)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cortado.jpg" alt="Cortado">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Cortado</h3>
+            <p class="price">Rs. 490</p>
+            <div class="cart-section">
+              <span class="item-desc">Equal espresso & milk</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Cortado', 490)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/affogato.jpg" alt="Affogato">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Affogato</h3>
+            <p class="price">Rs. 580</p>
+            <div class="cart-section">
+              <span class="item-desc">Espresso over ice cream</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Affogato', 580)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/hazelnut-latte.jpg" alt="Hazelnut Latte">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Hazelnut Latte</h3>
+            <p class="price">Rs. 640</p>
+            <div class="cart-section">
+              <span class="item-desc">Nutty aromatic brew</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Hazelnut Latte', 640)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/turkish-coffee.jpg" alt="Turkish Coffee">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Turkish Coffee</h3>
+            <p class="price">Rs. 460</p>
+            <div class="cart-section">
+              <span class="item-desc">Traditional unfiltered</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Turkish Coffee', 460)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-mocha.jpg" alt="Iced Mocha">
+          <div class="card-content">
+            <span class="item-cat">Coffee</span>
+            <h3>Iced Mocha</h3>
+            <p class="price">Rs. 650</p>
+            <div class="cart-section">
+              <span class="item-desc">Chilled chocolate coffee</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Iced Mocha', 650)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+        <!-- Bakery Items -->
+        <div class="menu-card">
+          <img src="images/sourdough-bread.jpg" alt="Sourdough Bread">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Sourdough Bread</h3>
+            <p class="price">Rs. 650</p>
+            <div class="cart-section">
+              <span class="item-desc">Freshly baked loaf</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Sourdough Bread', 650)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/almond-croissant.jpg" alt="Almond Croissant">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Almond Croissant</h3>
+            <p class="price">Rs. 550</p>
+            <div class="cart-section">
+              <span class="item-desc">Flaky and buttery</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Almond Croissant', 550)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/blueberry-muffin.jpg" alt="Blueberry Muffin">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Blueberry Muffin</h3>
+            <p class="price">Rs. 400</p>
+            <div class="cart-section">
+              <span class="item-desc">Sweet and fruity</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Blueberry Muffin', 400)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/chocolate-croissant.jpg" alt="Chocolate Croissant">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Chocolate Croissant</h3>
+            <p class="price">Rs. 500</p>
+            <div class="cart-section">
+              <span class="item-desc">Filled with dark choc</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Chocolate Croissant', 500)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cheese-danish.jpg" alt="Cheese Danish">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Cheese Danish</h3>
+            <p class="price">Rs. 480</p>
+            <div class="cart-section">
+              <span class="item-desc">Savory cheese pastry</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Cheese Danish', 480)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/butter-croissant.jpg" alt="Butter Croissant">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Butter Croissant</h3>
+            <p class="price">Rs. 450</p>
+            <div class="cart-section">
+              <span class="item-desc">Classic French butter</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Butter Croissant', 450)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/chocolate-brownie.jpg" alt="Chocolate Brownie">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Chocolate Brownie</h3>
+            <p class="price">Rs. 420</p>
+            <div class="cart-section">
+              <span class="item-desc">Fudgy dark chocolate</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Chocolate Brownie', 420)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/garlic-loaf.jpg" alt="Garlic Loaf">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Garlic Loaf</h3>
+            <p class="price">Rs. 500</p>
+            <div class="cart-section">
+              <span class="item-desc">Herb garlic butter bread</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Garlic Loaf', 500)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cinnamon-roll.jpg" alt="Cinnamon Roll">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Cinnamon Roll</h3>
+            <p class="price">Rs. 460</p>
+            <div class="cart-section">
+              <span class="item-desc">Warm cinnamon glaze</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Cinnamon Roll', 460)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/red-velvet.jpg" alt="Red Velvet Slice">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Red Velvet Slice</h3>
+            <p class="price">Rs. 550</p>
+            <div class="cart-section">
+              <span class="item-desc">Soft cream cheese cake</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Red Velvet Slice', 550)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/apple-pie.jpg" alt="Apple Pie Slice">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Apple Pie Slice</h3>
+            <p class="price">Rs. 480</p>
+            <div class="cart-section">
+              <span class="item-desc">Freshly baked slice</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Apple Pie Slice', 480)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/bagel.jpg" alt="Bagel with Cream Cheese">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Bagel with Cream Cheese</h3>
+            <p class="price">Rs. 420</p>
+            <div class="cart-section">
+              <span class="item-desc">Soft toasted bagel</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Bagel with Cream Cheese', 420)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/banana-bread.jpg" alt="Banana Bread Slice">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Banana Bread Slice</h3>
+            <p class="price">Rs. 380</p>
+            <div class="cart-section">
+              <span class="item-desc">Moist homemade slice</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Banana Bread Slice', 380)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/macarons.jpg" alt="Macarons Box">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Macarons Box (4pcs)</h3>
+            <p class="price">Rs. 750</p>
+            <div class="cart-section">
+              <span class="item-desc">Assorted French flavors</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Macarons Box (4pcs)', 750)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/focaccia.jpg" alt="Focaccia Bread">
+          <div class="card-content">
+            <span class="item-cat">Bakery</span>
+            <h3>Focaccia Bread</h3>
+            <p class="price">Rs. 580</p>
+            <div class="cart-section">
+              <span class="item-desc">Italian olive oil bread</span>
+              <button class="add-to-cart-btn" onclick="addToCart('Focaccia Bread', 580)">Add to Cart</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Data Insights Section -->
+  <section id="insights" class="insights-section">
+    <div class="container">
+      <h2>Sales & Data Insights</h2>
+      <p class="section-subtitle">Real-time performance analytics from our recent 30-order sales dataset.</p>
+
+      <!-- KPI Cards -->
+      <div class="kpis">
+        <div class="kpi">
+          <span class="kpi-number" id="kpiSales">0</span>
+          <span class="kpi-label">Total Sales (Rs)</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-number" id="kpiOrders">0</span>
+          <span class="kpi-label">Total Orders</span>
+        </div>
+        <div class="kpi">
+          <span class="kpi-number" id="kpiAvg">0</span>
+          <span class="kpi-label">Average Order Value (Rs)</span>
+        </div>
+      </div>
+
+      <!-- Bar Chart -->
+      <h3>Product Revenue Breakdown</h3>
+      <div id="barChart" class="bars"></div>
+      <p class="source">Source: Brew & Bake verified order logs, Oct 2026 (30 orders analysis).</p>
+
+      <!-- Findings & Recommendations -->
+      <div class="insights-grid">
+        <div class="insight-card">
+          <h4>Key Findings</h4>
+          <ul>
+            <li><strong>Spanish Latte & Iced Latte</strong> are top revenue drivers among beverages.</li>
+            <li>Bakery items like <strong>Sourdough Bread & Almond Croissant</strong> account for over 45% of total sales volume.</li>
+            <li>Average order ticket size remains strong at approximately <strong>Rs 1,300+</strong>.</li>
+          </ul>
+        </div>
+        <div class="insight-card">
+          <h4>Business Recommendations</h4>
+          <ul>
+            <li>Create morning bundle deals pairing specialty coffees with sourdough products.</li>
+            <li>Optimize bakery production schedules around peak afternoon hours (2 PM – 5 PM).</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About The Data</h2>
+      <p>This data reflects sample sales transactions recorded over 30 orders during October 2026. Data was cleaned and summarized using Google Sheets before rendering into interactive web components.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 Brew & Bake. All Rights Reserved. Built for D4WEE Tier 2 Final Project.</p>
+  </footer>
+
+  <!-- Checkout Modal -->
+  <div id="checkoutModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeCheckout()">&times;</span>
+      <h2>Complete Your Order</h2>
+      <form id="checkoutForm" onsubmit="submitOrder(event)">
+        <div class="form-group">
+          <label>Phone Number:</label>
+          <input type="text" id="custPhone" placeholder="0300-1234567" required>
+        </div>
+        <div class="form-group">
+          <label>Delivery / Dining Location:</label>
+          <input type="text" id="custLocation" value="Gulgasht Colony, Street 4, Multan" required>
+        </div>
+        <div class="form-group">
+          <label>Preferred Timing:</label>
+          <input type="text" id="custTiming" value="ASAP (Within 30-40 mins)" required>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%; margin-top:15px;">Confirm Order</button>
+      </form>
+      <div id="orderSuccessMsg" style="display:none; margin-top:15px; color:#f39c12; font-weight:600; text-align:center;"></div>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
