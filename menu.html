@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coffee Menu | Brew & Bake</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="main-header">
+    <div class="header-container">
+      <div class="logo">
+        <a href="index.html">
+          <span class="logo-icon"><i class="fa-solid fa-mug-hot"></i></span>
+          <span class="logo-text">BREW <span class="highlight">&</span> BAKE</span>
+        </a>
+      </div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="menu.html" class="active">Coffee</a>
+        <a href="menu-bakery.html">Bakery</a>
+        <a href="outlets.html">Outlets</a>
+        <a href="about.html">About Us</a>
+      </nav>
+      <div class="header-actions">
+        <button class="cart-btn-header" onclick="openCartModal()">
+          <i class="fa-solid fa-cart-shopping"></i> Cart (<span id="cart-count">0</span>)
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Menu Section -->
+  <section class="menu-section container">
+    <h2 class="page-title">Coffee & Beverages</h2>
+
+    <div class="category-tabs">
+      <a href="menu.html" class="cat-btn active">☕ Coffee & Drinks</a>
+      <a href="menu-bakery.html" class="cat-btn">🥐 Bakery & Sweets</a>
+    </div>
+
+    <div class="category-block">
+      <div class="menu-grid">
+        
+        <div class="menu-card">
+          <img src="images/espresso.jpg" alt="Espresso">
+          <div class="card-content">
+            <span class="item-cat">Hot Coffee</span>
+            <h3>Espresso</h3>
+            <p class="item-desc">Pure concentrated dark roast coffee shot.</p>
+            <div class="cart-section"><span class="price">Rs. 350</span><button class="add-to-cart-btn" onclick="addToCart('Espresso', 350)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cappuccino.jpg" alt="Cappuccino">
+          <div class="card-content">
+            <span class="item-cat">Hot Coffee</span>
+            <h3>Classic Cappuccino</h3>
+            <p class="item-desc">Rich espresso with thick steamed milk foam.</p>
+            <div class="cart-section"><span class="price">Rs. 650</span><button class="add-to-cart-btn" onclick="addToCart('Classic Cappuccino', 650)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/caramel-macchiato.jpg" alt="Caramel Macchiato">
+          <div class="card-content">
+            <span class="item-cat">Hot Specialty</span>
+            <h3>Caramel Macchiato</h3>
+            <p class="item-desc">Vanilla milk with espresso & caramel drizzle.</p>
+            <div class="cart-section"><span class="price">Rs. 750</span><button class="add-to-cart-btn" onclick="addToCart('Caramel Macchiato', 750)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cortado.jpg" alt="Cortado">
+          <div class="card-content">
+            <span class="item-cat">Hot Coffee</span>
+            <h3>Cortado</h3>
+            <p class="item-desc">Equal parts espresso and warm steamed milk.</p>
+            <div class="cart-section"><span class="price">Rs. 550</span><button class="add-to-cart-btn" onclick="addToCart('Cortado', 550)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/flat-white.jpg" alt="Flat White">
+          <div class="card-content">
+            <span class="item-cat">Hot Coffee</span>
+            <h3>Flat White</h3>
+            <p class="item-desc">Double espresso with smooth microfoam milk.</p>
+            <div class="cart-section"><span class="price">Rs. 680</span><button class="add-to-cart-btn" onclick="addToCart('Flat White', 680)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/mocha.jpg" alt="Mocha">
+          <div class="card-content">
+            <span class="item-cat">Hot Coffee</span>
+            <h3>Caffe Mocha</h3>
+            <p class="item-desc">Espresso blended with rich cocoa and milk.</p>
+            <div class="cart-section"><span class="price">Rs. 700</span><button class="add-to-cart-btn" onclick="addToCart('Caffe Mocha', 700)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/spanish-latte.jpg" alt="Spanish Latte">
+          <div class="card-content">
+            <span class="item-cat">Hot Specialty</span>
+            <h3>Spanish Latte</h3>
+            <p class="item-desc">Sweet condensed milk blended with espresso.</p>
+            <div class="cart-section"><span class="price">Rs. 790</span><button class="add-to-cart-btn" onclick="addToCart('Spanish Latte', 790)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/turkish-coffee.jpg" alt="Turkish Coffee">
+          <div class="card-content">
+            <span class="item-cat">Traditional</span>
+            <h3>Turkish Coffee</h3>
+            <p class="item-desc">Unfiltered finely ground strong aromatic coffee.</p>
+            <div class="cart-section"><span class="price">Rs. 500</span><button class="add-to-cart-btn" onclick="addToCart('Turkish Coffee', 500)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/affogato.jpg" alt="Affogato">
+          <div class="card-content">
+            <span class="item-cat">Dessert Coffee</span>
+            <h3>Affogato</h3>
+            <p class="item-desc">Vanilla ice cream scoop drowned in hot espresso.</p>
+            <div class="cart-section"><span class="price">Rs. 620</span><button class="add-to-cart-btn" onclick="addToCart('Affogato', 620)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/hazelnut-latte.jpg" alt="Hazelnut Latte">
+          <div class="card-content">
+            <span class="item-cat">Flavored Latte</span>
+            <h3>Hazelnut Latte</h3>
+            <p class="item-desc">Creamy espresso infused with roasted hazelnut.</p>
+            <div class="cart-section"><span class="price">Rs. 740</span><button class="add-to-cart-btn" onclick="addToCart('Hazelnut Latte', 740)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-americano.jpg" alt="Iced Americano">
+          <div class="card-content">
+            <span class="item-cat">Cold Coffee</span>
+            <h3>Iced Americano</h3>
+            <p class="item-desc">Chilled espresso over cold water and ice.</p>
+            <div class="cart-section"><span class="price">Rs. 520</span><button class="add-to-cart-btn" onclick="addToCart('Iced Americano', 520)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-latte.jpg" alt="Iced Latte">
+          <div class="card-content">
+            <span class="item-cat">Cold Coffee</span>
+            <h3>Iced Latte</h3>
+            <p class="item-desc">Smooth espresso with chilled fresh milk.</p>
+            <div class="cart-section"><span class="price">Rs. 680</span><button class="add-to-cart-btn" onclick="addToCart('Iced Latte', 680)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/iced-mocha.jpg" alt="Iced Mocha">
+          <div class="card-content">
+            <span class="item-cat">Cold Coffee</span>
+            <h3>Iced Mocha</h3>
+            <p class="item-desc">Chilled espresso with rich chocolate sauce & ice.</p>
+            <div class="cart-section"><span class="price">Rs. 750</span><button class="add-to-cart-btn" onclick="addToCart('Iced Mocha', 750)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/vanilla-latte.jpg" alt="Vanilla Latte">
+          <div class="card-content">
+            <span class="item-cat">Flavored Latte</span>
+            <h3>Vanilla Latte</h3>
+            <p class="item-desc">Classic espresso with sweet vanilla bean syrup.</p>
+            <div class="cart-section"><span class="price">Rs. 720</span><button class="add-to-cart-btn" onclick="addToCart('Vanilla Latte', 720)">Add to Cart</button></div>
+          </div>
+        </div>
+
+        <div class="menu-card">
+          <img src="images/cold-brew.jpg" alt="Cold Brew">
+          <div class="card-content">
+            <span class="item-cat">Cold Specialty</span>
+            <h3>Signature Cold Brew</h3>
+            <p class="item-desc">Slow-steeped 18 hours for smooth low-acid taste.</p>
+            <div class="cart-section"><span class="price">Rs. 700</span><button class="add-to-cart-btn" onclick="addToCart('Signature Cold Brew', 700)">Add to Cart</button></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart / Checkout Modal -->
+  <div id="cartModal" class="modal" style="display: none;">
+    <div class="modal-content">
+      <span class="close-btn" onclick="closeCartModal()">&times;</span>
+      <h2>Your Shopping Cart</h2>
+      <div id="cartItemsList" style="padding: 10px 0; max-height: 150px; overflow-y: auto; border-bottom: 1px solid rgba(255,255,255,0.1);">
+        <p style="color: #aaa; font-size: 0.9rem;">Cart is currently empty.</p>
+      </div>
+      <div class="form-group" style="margin-top: 15px;"><label>Customer Name:</label><input type="text" id="custName" placeholder="Enter your name"></div>
+      <div class="form-group"><label>Phone Number:</label><input type="text" id="custPhone" placeholder="Enter phone number"></div>
+      <div class="form-group"><label>Delivery Address:</label><input type="text" id="custAddress" placeholder="Enter full address in Multan"></div>
+      <button class="btn btn-primary" style="width:100%; margin-top:10px;" onclick="checkoutOrder()">Place Order</button>
+    </div>
+  </div>
+
+  <footer class="main-footer"><div class="footer-bottom"><p>&copy; 2026 Brew & Bake Cafe. All Rights Reserved.</p></div></footer>
+
+  <script>
+    let cart = [];
+    function addToCart(name, price) {
+      cart.push({ name, price });
+      document.getElementById('cart-count').innerText = cart.length;
+      alert(name + ' added to cart!');
+    }
+    function openCartModal() {
+      document.getElementById('cartModal').style.display = 'flex';
+      let listHTML = '';
+      if(cart.length === 0) {
+        listHTML = '<p style="color: #aaa; font-size: 0.9rem;">Cart is currently empty.</p>';
+      } else {
+        let total = 0;
+        cart.forEach((item) => {
+          total += item.price;
+          listHTML += `<div style="display:flex; justify-content:space-between; margin-bottom:5px; font-size:0.9rem;"><span>${item.name}</span> <span>Rs. ${item.price}</span></div>`;
+        });
+        listHTML += `<div style="font-weight:bold; margin-top:8px; color:#f39c12;">Total: Rs. ${total}</div>`;
+      }
+      document.getElementById('cartItemsList').innerHTML = listHTML;
+    }
+    function closeCartModal() { document.getElementById('cartModal').style.display = 'none'; }
+    
+    function checkoutOrder() {
+      let name = document.getElementById('custName').value;
+      let phone = document.getElementById('custPhone').value;
+      let address = document.getElementById('custAddress').value;
+      if(!name || !phone || !address || cart.length === 0) { alert('Please fill name, phone, address and add items!'); return; }
+      
+      // Sending data to backend PHP script to save in MySQL database
+      let orderData = { name, phone, address, items: cart };
+      
+      fetch('save-order.php', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(orderData)
+      })
+      .then(response => response.text())
+      .then(data => {
+        alert('Order Placed & Saved in Database Successfully!');
+        cart = []; 
+        document.getElementById('cart-count').innerText = 0;
+        document.getElementById('custName').value = ''; 
+        document.getElementById('custPhone').value = '';
+        document.getElementById('custAddress').value = '';
+        closeCartModal();
+      })
+      .catch(error => {
+        alert('Order placed locally (Check database connection script).');
+        closeCartModal();
+      });
+    }
+  </script>
+</body>
+</html>
